@@ -17,18 +17,18 @@ function generateOpenTag(href, className = '', origin, related, attr = 'src') {
   </div>`;
 }
 
-function isYouTubeLink(href) {
-  return href.indexOf('youtube:') === 0;
+function isPDFLink(href) {
+  return href.indexOf('pdf:') === 0;
 }
 
-const remarkableYouTube = (md, config = {}) => {
+const remarkablePDF = (md, config = {}) => {
   const originalLinkOpenRenderer = md.renderer.rules.link_open;
   const originalLinkCloseRenderer = md.renderer.rules.link_close;
 
   md.renderer.rules.link_open = (tokens, idx, options, env) => {
     const href = tokens[idx].href;
 
-    if (isYouTubeLink(href)) {
+    if (isPDFLink(href)) {
       env.youtube = true;
       return generateOpenTag(href, config.className, config.origin, config.related, config.attr);
     }
@@ -46,4 +46,4 @@ const remarkableYouTube = (md, config = {}) => {
   };
 };
 
-module.exports = remarkableYouTube;
+module.exports = remarkablePDF;
