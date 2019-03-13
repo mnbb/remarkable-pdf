@@ -1,28 +1,26 @@
 {
-  "name": "remarkable-youtube",
+  "name": "remarkable-pdf",
   "version": "1.2.1",
-  "description": "Renders YouTube video links with iframe.",
+  "description": "Renders PDF files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaliy-bobrov/remarkable-youtube.git"
+    "url": "https://github.com/mnbb/remarkable-pdf.git"
   },
   "keywords": [
     "remarkable",
     "plugin",
-    "video",
-    "youtube",
-    "iframe"
+    "pdf",
+    "document",
+    "doc",
+    "embedded"
   ],
   "author": "Vitaliy Bobrov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vitaliy-bobrov/remarkable-youtube/issues"
-  },
-  "homepage": "https://github.com/vitaliy-bobrov/remarkable-youtube#readme",
+  "homepage": "https://github.com/mnbb/remarkable-pdf#readme",
   "dependencies": {
     "remarkable": "^1.7.1"
   }
